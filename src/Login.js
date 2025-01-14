@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import topImage from "./cds.png"; // Importa la imagen superior
+import bottomImage from "./logo-bottom.png"; // Importa la imagen inferior
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -12,7 +14,7 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await fetch("https://7992-200-23-84-2.ngrok-free.app/api/auth/login", {
+      const response = await fetch("http://localhost:5000/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +50,7 @@ const Login = () => {
     <div style={styles.container}>
       {/* Imagen de la parte superior */}
       <img
-        src="https://via.placeholder.com/150" // Cambia la URL por la imagen que desees
+        src={topImage} // Usa la variable importada
         alt="Logo Superior"
         style={styles.topImage}
       />
@@ -81,7 +83,7 @@ const Login = () => {
 
       {/* Imagen de la parte inferior */}
       <img
-        src="https://via.placeholder.com/150" // Cambia la URL por la imagen que desees
+        src={bottomImage} // Usa la variable importada
         alt="Logo Inferior"
         style={styles.bottomImage}
       />
