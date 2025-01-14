@@ -1,0 +1,38 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+.alerts-container {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #eaf2ff;
+}
+
+.alert-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.alert-item strong {
+  color: #000;
+}
