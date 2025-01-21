@@ -8,7 +8,7 @@ import Header from "./Header";
 const GOOGLE_MAPS_API_KEY = "AIzaSyD_hUuugJzTfQMl4OxFWSvj-ZcNeyFQD2w";
 
 // URL base de tu backend
-const BACKEND_URL = "https://7992-200-23-84-2.ngrok-free.app/";
+const BACKEND_URL = "http://testapiciudadsegura.junin.gob.ar";
 
 const AlertaMapa = () => {
   const [alertas, setAlertas] = useState([]);

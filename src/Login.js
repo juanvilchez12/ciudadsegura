@@ -14,7 +14,7 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await fetch("http://192.168.0.202:5000/api/auth/login", {
+      const response = await fetch("http://testapiciudadsegura.junin.gob.ar/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const Login = () => {
 
       // Redirigir según el rol
       if (role === "admin") {
-        navigate("/alertas");
+        navigate("/alertas"); // Ruta para administradores
       } else {
         setError("Acceso denegado: No eres administrador.");
       }
